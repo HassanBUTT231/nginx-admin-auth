@@ -4,6 +4,12 @@ const app = express();
 
 app.use('/admin', express.static(path.join(__dirname, 'admin-panel')));
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'UP' });
+});
+
+
 app.get('/', (req, res) => {
     res.send('Home Page - Public Access');
 });
