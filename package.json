@@ -1,0 +1,12 @@
+{
+  "name": "nginx-admin-auth",
+  "version": "1.0.0",
+  "description": "Test NGINX basic authentication with Node.js admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
